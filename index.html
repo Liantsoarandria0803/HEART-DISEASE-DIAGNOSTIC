@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de Données</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>HEART DISEASE DIAGNOSTIC</h2>
+
+<form action="api.php" method="post">
+    <label for="nom">Nom:</label><br>
+    <input type="text" id="nom" name="nom"><br>
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br>
+    
+    <label for="sex">Sexe:</label><br>
+    <select id="sex" name="sex">
+        <option value="1">Masculin</option>
+        <option value="0">Féminin</option>
+    </select><br>
+    
+    <label for="cp">CP:</label><br>
+    <input type="number" id="cp" name="cp"><br>
+    
+    <label for="trestbps">Tension artérielle:</label><br>
+    <input type="number" id="trestbps" name="trestbps"><br>
+    
+    <label for="chol">Cholestérol:</label><br>
+    <input type="number" id="chol" name="chol"><br>
+    
+    <label for="fbs">Glucidémie:</label><br>
+    <input type="number" id="fbs" name="fbs"><br>
+    
+    <label for="restecg">ECG au repos:</label><br>
+    <input type="number" id="restecg" name="restecg"><br>
+    
+    <label for="thalach">Fréquence maximale du cœur:</label><br>
+    <input type="number" id="thalach" name="thalach"><br>
+    
+    <label for="exang">Exercice angineux:</label><br>
+    <input type="number" id="exang" name="exang"><br>
+    
+    <label for="oldpeak">Durée de l'exercice:</label><br>
+    <input type="number" id="oldpeak" name="oldpeak"><br>
+    
+    <label for="slope">Pente du ST segment:</label><br>
+    <input type="number" id="slope" name="slope"><br>
+    
+    <label for="ca">Nombre de vaisseaux:</label><br>
+    <input type="number" id="ca" name="ca"><br>
+    
+    <label for="thal">Thalassemie:</label><br>
+    <input type="number" id="thal" name="thal"><br>
+    
+    <input type="submit" value="Soumettre">
+</form>
+
+</body>
+</html>
